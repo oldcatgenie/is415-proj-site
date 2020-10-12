@@ -4,4 +4,4 @@
 # Exceptions
 !.gitignore
 !README.md
-!public/*
+!/public/*
