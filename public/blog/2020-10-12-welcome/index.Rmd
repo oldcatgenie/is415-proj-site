@@ -1,0 +1,15 @@
+---
+title: Welcome
+author: LandMarkdown
+date: '2020-10-12'
+slug: []
+categories:
+  - general
+tags: []
+description: 'The first blog post of this website'
+weight: 20
+---
+
+## Welcome to the Project Website!
+
+Thanks for visiting our project website. Stay tuned as we update you on the project progress here.
