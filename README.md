@@ -1,2 +1,2 @@
-# is415-proj
-IS415 Geospatial Analytics and Applications - Project
+# is415-geospatial-proj
+IS415 Geospatial Analytics Project - Team 7 
