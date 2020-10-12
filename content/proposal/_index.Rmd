@@ -1,0 +1,155 @@
+---
+description: "Identifying Potential Clusters of Businesses by Type through Spatial Point Patterns Analysis and Spatial Autocorrelation"
+draft: FALSE
+title: "Proposal"
+---
+
+## Introduction
+
+Over the years, planning for Singapore’s long term sustainability and optimising usage of our limited land have always been a strategic challenge for Singapore’s government agencies. The Urban Redevelopment Authority (URA) has been launching initiatives such as the Concept Plan and Master Plan in an effort to develop Singapore’s physical environment in a sustainable manner. However, data shared by various agencies at public online data portals have not been explored or worked on extensively within their counterparts to gain a better understanding on the spatial distribution of businesses in Singapore and thus unable to more effectively translate them into better insights.
+
+Our team feels that we can contribute to this area by demonstrating how we can make use of data provided by these open data portals and analyse them together in order to showcase the role of geospatial analytics in Singapore.
+
+## Project Motivation
+
+The spatial distribution of economic activity has an important role to play in economic theory and government policy. This is because clusters of similar economic units are able to make use of economies of scale, and there may also be spillover effects found in the periphery, which are topics of interest to economists and policymakers alike.
+
+Our team aims to propose and complete a project which will allow economists and policymakers to identify and better understand the spatial point patterns of various business entities in Singapore. By making use of such geospatial analysis techniques, they will be better at isolating specific points or areas with a specific spatial event distribution that they need in order to conduct further economic analysis, either for research or for government planning purposes.
+
+## Project Objectives
+
+For this project, we would be creating an analytical tool for observing and analysing the spatial point patterns of business entities in Singapore. Specifically, it focuses on the following objectives:
+
+- To visualise the spatial distribution of different business types in Singapore on an internet-based map such as OpenStreetMap.
+- To conduct statistical simulations to reveal evidence of clusters or spatial autocorrelation.
+- To provide a user-friendly interface through the creation of a RShiny application to apply relevant filters for different business types.
+
+## Datasets Used
+
+<table class="bordered">
+  <tr>
+    <th>Data</th>
+    <th>Description</th>
+    <th>Source</th>
+    <th>URL</th>
+    <th>File Type</th>
+  </tr>
+  <tr>
+  <td>Corporate Entities Information</td>
+  <td>This dataset comprises data on entities that are registered in Singapore, with additional information such as paid-up capital.</td>
+  <td>Accounting and Corporate Regulatory Authority</td>
+  <td>https://data.gov.sg/dataset/acra-information-on-corporate-entities</td>
+  <td>.csv File</td>
+  </tr>
+  <tr>
+  <td>OneMap Address Data Search</td>
+  <td>This search API returns the geometry of an address based on search values such as postal codes.</td>
+  <td>Singapore Land Authority</td>
+  <td>https://docs.onemap.sg/#authentication-service-post</td>
+  <td>REST API</td>
+  </tr>
+  <tr>
+  <td>Singapore Standard Industrial Classification 2020</td>
+  <td>The Singapore Standard Industrial Classification (SSIC) is the national standard for classifying economic activities undertaken by economic units.</td>
+  <td>Department of Statistics Singapore</td>
+  <td>https://www.singstat.gov.sg/standards/standards-and-classifications/ssic</td>
+  <td>.xlsx File</td>
+  </tr>
+  <tr>
+  <td>Vacant Sites Sold By URA</td>
+  <td>This dataset reveals the information relating to URA land sales for commercial, hotel and private residential developments.</td>
+  <td>Urban Redevelopment Authority</td>
+  <td>https://data.gov.sg/dataset/vacant-sites-sold-by-ura</td>
+  <td>.csv File</td>
+  </tr>
+</table>
+
+## Literature Review
+
+We reviewed a few pieces of literature to identify similar work that had been done in this area and determine how we can use their past experiences and conclusions to develop our project approach.
+
+### Literature Review 1 - Development Assessment of the Singapore land
+
+This research paper analyses how Singapore strategically plans their development given the limited amount of land. This paper is relevant to our project as it also shares insights of how Singapore plans their land for 2030.
+
+<p align="center">
+![City Index Indicators](/proposal/_index_files/city-index-indicators.PNG)
+</p>
+
+The 5 main indicators used to calculate the ‘City Index’ of Singapore are selected based on the common factors used for the city’s development and Singapore Island. The indicators are: ‘Social’, ‘Environmental’, ‘Industrialization’, ‘Economic’ and ‘Naturality’. We find this useful as it helps us to understand the possible considerations required for each industry. For instance, the paper mentioned that Industrialization, Economic and Naturality (i.e. coastline, water bodies and open space) are defined as industrial areas, commercial units and open space respectively. In addition, the formula for calculating the city index helps us to be in-line with the Master Plan 2030.
+
+<p align="center">
+![Favorability Index Map](/proposal/_index_files/Favorability Index Map.PNG)
+</p>
+
+The paper also considers the favorability index for development of Singapore. The areas that are high and very high favourable are located near areas that are expected to increase due to the reclamation land in 2030. As a result, those areas have direct relationships with the reserve sites, open space and recreation areas. 
+These details are insightful and helpful for strategizing development which we can consider doing for our project.
+
+### Literature Review 2 - Spatial Point Pattern Analysis and Industry Concentration
+
+This research paper highlights the importance of the spatial distribution of economic activity in economic theory and policy making. For example, clusters can positively affect competition by increasing productivity and innovation as well as stimulating the formation of new businesses, through economic effects such as economies of scale.
+
+However, traditional metrics for industry concentration do not account for geospatial effects. They fail to account for the formation of clusters at different regional scales, and the degree of concentration is not expected to be independent on the reach of grouping of the firms.
+
+In this paper, the authors introduce a concentration index of the style of Besag’s (1977) L function that is based on the concept of the K function. While Besag’s L function is intended to measure deviations from the CSR process, the new index can be applied to identify the importance of sector-specific and more general industry-specific forces inducing clustering.
+
+In addition, the authors also proposed a feasible testing procedure enabling a usage of the K function approach efficiently for large study regions. For this, Diggle and Chetwynd’s (1991) D function approach is replaced by a spatial similarity test based on subsamples drawn from the industry under analysis and the reference population. 
+
+Third,  concentration of the branches of industry in Germany was only available at spatial scales given by arbitrarily defined regions. While the authors illustrated their K function approach by using selected industries, they additionally provided concentration numbers for sixteen German industries within different distance bands.
+
+## Project Approach
+
+Based on the above literature review, we have decided to take on this project using the following approach:
+
+- Data collection
+- Data cleaning and wrangling
+- Exploratory data analysis
+- Spatial point pattern analyses of first and second order effects
+- Spatial autocorrelation
+- Communicate results using the appropriate geo-visualisation techniques
+- Report findings and conclusions
+
+## Storyboard
+
+<p align="center">
+![Storyboard 1](/proposal/_index_files/Storyboard1.png)
+</p>
+
+<p align="center">
+![Storyboard 2](/proposal/_index_files/Storyboard2.png)
+</p>
+
+## System Architecture
+
+## Tools and Technologies Used
+
+- RStudio
+- R
+
+## Expected Challenges
+
+### Data Cleaning and Wrangling
+
+The data that we download off data portals or called via API may not be in the most appropriate format for us to conduct our analysis. We have to ensure that the data is tidy and clean before using it.
+
+### Creating an R Shiny Application
+
+Our team has no experience with R prior to this semester and we only learnt about the R Shiny package in Week 8. As such, it may take some time as well as serious effort to produce a sufficiently polished application that is ready for use. We will make use of project scheduling techniques we learnt in a previous module, IS212 Software Project Management, in order to ensure that the deliverables are tested and ready to be submitted on time.
+
+### Lack of Domain Knowledge
+
+We expect our lack of domain knowledge in the relationship between economics and geospatial analytics to hinder our interpretation of the analysis results. Further studies in this area may be required.
+
+## Project Timeline
+
+## References
+
+Besag, J. (1977), Contribution to the discussion of Dr. Ripley’s paper, Journal of the Royal
+Statistical Society B25, 294.
+
+Diggle, P.J., Chetwynd, A.G. (1991), Second-order analysis of spatial clustering for inhomo-
+geneous populations, Biometrics 47, 1155-1163.
+
+Kosfeld, R., Eckey, H.-F., & Lauridsen, J. (2011). Spatial point pattern analysis and industry concentration. The Annals of Regional Science, 47(2), 311–328. https://doi.org/10.1007/s00168-010-0385-5
+
+Nistor, Mărgărit & Rahardjo, H. & Satyanaga, Alfrendo. (2019). Development assessment of the Singapore land: A GIS spatial-temporal apporach based on land cover analysis. Geographia Technica. 14. 10.21163/GT_2019.142.06.

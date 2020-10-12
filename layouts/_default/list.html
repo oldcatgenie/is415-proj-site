@@ -1,0 +1,19 @@
+{{ define "title"}} {{ .Title}} {{end}}
+{{ define "header"}} {{ partial "header" .}} {{end}}
+
+{{ define "main" }}
+
+<div id="hero" class="wrap">
+  <h1>Voice of {{.Site.Params.author }}</h1>
+    <p>Join us in our geospatial analytics journey here.</p>
+</div>
+<ul id="posts">
+
+ {{ range .Paginator.Pages.ByWeight }} {{ partial "page-summary" . }} {{ end }}
+  <section>{{ partial "pagination" .}}</section>
+</ul>
+
+{{ end }} 
+{{ define "footer" }} 
+  {{ partial "footer" . }} 
+{{ end }}

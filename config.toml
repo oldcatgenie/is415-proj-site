@@ -1,0 +1,33 @@
+baseURL = "/"
+languageCode = "en-us"
+title = "LandMarkdown"
+theme = "kube"
+description = "Geospatial Analytics and Applications project by G1T7"
+Paginate = 4
+[Params]
+  RSSLink = "/index.xml"
+  author = "LandMarkdown (G1T7)" # add your company name
+  github = "" # add your github profile name
+  twitter = "" # add your twitter profile
+  email = ""
+
+[[menu.main]]
+    name = "About"
+    weight = 1
+    url = "/about/"
+[[menu.main]]
+    name = "Proposal"
+    weight = 2
+    url = "/proposal/"
+[[menu.main]]
+    name = "Documentation"
+    weight = 3
+    url = "/docs/"
+[[menu.main]]
+    name = "Project Blog"
+    weight = 4
+    url = "/blog/"
+[[menu.main]]
+    name = "FAQs"
+    weight = 5
+    url = "/faq/"
