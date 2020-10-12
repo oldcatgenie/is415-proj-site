@@ -14,14 +14,15 @@ title: "Proposal"
 <div id="project-motivation" class="section level2">
 <h2>Project Motivation</h2>
 <p>The spatial distribution of economic activity has an important role to play in economic theory and government policy. This is because clusters of similar economic units are able to make use of economies of scale, and there may also be spillover effects found in the periphery, which are topics of interest to economists and policymakers alike.</p>
-<p>Our team aims to propose and complete a project which will allow economists and policymakers to identify and better understand the spatial point patterns of various business entities in Singapore. By making use of such geospatial analysis techniques, they will be better at isolating specific points or areas with a specific spatial event distribution that they need in order to conduct further economic analysis, either for research or for government planning purposes.</p>
+<p>Our team aims to propose and complete a project which will allow economists and policymakers to identify and better understand the spatial point patterns and geographic segmentation of various business entities in Singapore. By making use of such geospatial analysis techniques, they will be better at isolating or identifying points or areas with a specific characteristics that they need in order to conduct further economic analysis, either for research or for policy making purposes.</p>
 </div>
 <div id="project-objectives" class="section level2">
 <h2>Project Objectives</h2>
 <p>For this project, we would be creating an analytical tool for observing and analysing the spatial point patterns of business entities in Singapore. Specifically, it focuses on the following objectives:</p>
 <ul>
 <li>To visualise the spatial distribution of different business types in Singapore on an internet-based map such as OpenStreetMap.</li>
-<li>To conduct statistical simulations to reveal evidence of clusters or spatial autocorrelation.</li>
+<li>To conduct statistical simulations to reveal evidence of clusters using spatial point patterns analysis.</li>
+<li>To conduct clustering to reveal characteristics of spatially constrained clusters.</li>
 <li>To provide a user-friendly interface through the creation of a RShiny application to apply relevant filters for different business types.</li>
 </ul>
 </div>
@@ -148,22 +149,29 @@ These details are insightful and helpful for strategizing development which we c
 <li>Data cleaning and wrangling</li>
 <li>Exploratory data analysis</li>
 <li>Spatial point pattern analyses of first and second order effects</li>
-<li>Spatial autocorrelation</li>
+<li>Geographical Segmentation through various clustering techniques</li>
 <li>Communicate results using the appropriate geo-visualisation techniques</li>
 <li>Report findings and conclusions</li>
 </ul>
 </div>
-<div id="storyboard" class="section level2">
-<h2>Storyboard</h2>
+<div id="application-design-storyboard" class="section level2">
+<h2>Application Design Storyboard</h2>
+<p>This storyboard is a tentative design of how the R Shiny Application will look like as the team develops it.</p>
+<p>The following picture shows how a map will be displayed. A map will be displayed in the main panel, while there would be a side panel for the user to toggle between other functions (buttons in red), as well as filter options in checkboxes.</p>
 <p align="center">
 <img src="/proposal/_index_files/Storyboard1.png" title="fig:" alt="Storyboard 1" />
 </p>
+<p>The following picture shows how a distribution (in histogram) will be displayed. Such visualisations will help us communicate the results of our data exploration better. The visualisation will be displayed in the main panel, while there would be a side panel for the user to toggle between other functions (buttons in red), as well as filter options in checkboxes.</p>
 <p align="center">
 <img src="/proposal/_index_files/Storyboard2.png" title="fig:" alt="Storyboard 2" />
 </p>
 </div>
 <div id="system-architecture" class="section level2">
 <h2>System Architecture</h2>
+<p>The following photo represents our system architecture diagram.</p>
+<p align="center">
+<img src="/proposal/_index_files/ArchitectureDiagram.jpg" title="fig:" alt="Architecture Diagram" />
+</p>
 </div>
 <div id="expected-challenges" class="section level2">
 <h2>Expected Challenges</h2>
@@ -177,18 +185,17 @@ These details are insightful and helpful for strategizing development which we c
 </div>
 <div id="lack-of-domain-knowledge" class="section level3">
 <h3>Lack of Domain Knowledge</h3>
-<p>We expect our lack of domain knowledge in the relationship between economics and geospatial analytics to hinder our interpretation of the analysis results. Further studies in this area may be required.</p>
+<p>We expect our lack of domain knowledge in the relationship between economics and geospatial analytics could hinder our ability to interpret the analysis results. Further studies in this area may be required.</p>
 </div>
 </div>
 <div id="project-timeline" class="section level2">
 <h2>Project Timeline</h2>
+<p>We use the following <a href="https://docs.google.com/spreadsheets/d/1cp3CKYhdnv7sSy6e-tKKjGHCv9idwKuPrcaMHPZpspk/edit?usp=sharing">Google Sheet</a> to manage our project timeline. Please log in to Google using a valid Singapore Management University (SMU) account to view the project timeline.</p>
 </div>
 <div id="references" class="section level2">
 <h2>References</h2>
-<p>Besag, J. (1977), Contribution to the discussion of Dr. Ripley’s paper, Journal of the Royal
-Statistical Society B25, 294.</p>
-<p>Diggle, P.J., Chetwynd, A.G. (1991), Second-order analysis of spatial clustering for inhomo-
-geneous populations, Biometrics 47, 1155-1163.</p>
+<p>Besag, J. (1977). Contribution to the discussion of Dr. Ripley’s paper. Journal of the Royal Statistical Society B25, 294.</p>
+<p>Diggle, P.J., Chetwynd, A.G. (1991). Second-order analysis of spatial clustering for inhomo-geneous populations. Biometrics 47, 1155-1163.</p>
 <p>Kosfeld, R., Eckey, H.-F., &amp; Lauridsen, J. (2011). Spatial point pattern analysis and industry concentration. The Annals of Regional Science, 47(2), 311–328. <a href="https://doi.org/10.1007/s00168-010-0385-5" class="uri">https://doi.org/10.1007/s00168-010-0385-5</a></p>
 <p>Nistor, Mărgărit &amp; Rahardjo, H. &amp; Satyanaga, Alfrendo. (2019). Development assessment of the Singapore land: A GIS spatial-temporal apporach based on land cover analysis. Geographia Technica. 14. 10.21163/GT_2019.142.06.</p>
 </div>
