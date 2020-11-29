@@ -6,8 +6,10 @@ title: "Poster"
 
 ## Poster
 
-
+<p align="center">
+![](/poster/_index_files/project-poster.jpeg)
+</p>
 
 ## Poster Dimensions
 
-Our project poster is in the ANSI A1 size. Click [here]() if you wish to download the poster in the full resolution
+Our project poster is in the ANSI A1 size. Click [here](/poster/_index_files/project-poster.jpeg) if you wish to download the poster in the full resolution.
