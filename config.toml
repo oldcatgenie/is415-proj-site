@@ -12,22 +12,18 @@ Paginate = 4
   email = ""
 
 [[menu.main]]
-    name = "About"
-    weight = 1
-    url = "/about/"
-[[menu.main]]
     name = "Proposal"
-    weight = 2
+    weight = 1
     url = "/proposal/"
 [[menu.main]]
-    name = "Documentation"
+    name = "Research Paper"
+    weight = 2
+    url = "/researchpaper/"
+[[menu.main]]
+    name = "Poster"
     weight = 3
-    url = "/docs/"
+    url = "/poster/"
 [[menu.main]]
-    name = "Project Blog"
+    name = "Application"
     weight = 4
-    url = "/blog/"
-[[menu.main]]
-    name = "FAQs"
-    weight = 5
-    url = "/faq/"
+    url = "https://landmarkdown.shinyapps.io/application/"

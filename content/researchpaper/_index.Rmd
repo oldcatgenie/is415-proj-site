@@ -1,0 +1,11 @@
+---
+description: "Take a look at the work we did for LandMarkdown."
+draft: FALSE
+title: "Research Paper"
+---
+
+## Download
+
+You can access our research paper by downloading it [here](/researchpaper/_index_files/Research-Paper.pdf).
+
+This research paper was generated using the ACM template of the **rticles** package.

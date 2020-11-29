@@ -57,11 +57,10 @@ For this project, we would be creating an analytical tool for observing and anal
   <td>.xlsx File</td>
   </tr>
   <tr>
-  <td>Vacant Sites Sold By URA</td>
-  <td>This dataset reveals the information relating to URA land sales for commercial, hotel and private residential developments.</td>
-  <td>Urban Redevelopment Authority</td>
-  <td>https://data.gov.sg/dataset/vacant-sites-sold-by-ura</td>
-  <td>.csv File</td>
+  <td>Master Plan 2014 Subzone Boundary (No Sea)</td>
+  <td>This dataset contains the spatial data, as the URA divides Singapore into regions, planning areas and subzones to facilitate urban planning.</td>
+  <td>https://data.gov.sg/dataset/master-plan-2014-subzone-boundary-no-sea</td>
+  <td>.shp Files</td>
   </tr>
 </table>
 
@@ -112,19 +111,46 @@ Based on the above literature review, we have decided to take on this project us
 
 ## Application Design Storyboard
 
-This storyboard is a tentative design of how the R Shiny Application will look like as the team develops it.
-
-The following picture shows how a map will be displayed. A map will be displayed in the main panel, while there would be a side panel for the user to toggle between other functions (buttons in red), as well as filter options in checkboxes.
+This following series of photos is a storyboard which shows how the R Shiny Application will look like as the team develops it.
 
 <p align="center">
-![Storyboard 1](/proposal/_index_files/Storyboard1.png)
+![](/proposal/_index_files/Storyboard1.PNG)
 </p>
 
-The following picture shows how a distribution (in histogram) will be displayed. Such visualisations will help us communicate the results of our data exploration better. The visualisation will be displayed in the main panel, while there would be a side panel for the user to toggle between other functions (buttons in red), as well as filter options in checkboxes.
+The storyboard above shows the homepage of the R Shiny Application, where we list out all the pages of the Application and reintroduce the LandMarkdown project and its objectives.
 
 <p align="center">
-![Storyboard 2](/proposal/_index_files/Storyboard2.png)
+![](/proposal/_index_files/Storyboard2.PNG)
 </p>
+
+The second storyboard shows the data we used for our project in tabular format. This interactive table also allows simple searching and sorting.
+
+<p align="center">
+![](/proposal/_index_files/Storyboard3.PNG)
+</p>
+
+The third storyboard shows the results of our data exploration, where you can view the boxmaps, histograms and correlation plots. You can view these visualisations while selecting or filtering the industry category, among other options.
+
+<p align="center">
+![](/proposal/_index_files/Storyboard4.PNG)
+</p>
+
+The fourth storyboard shows the results of our spatial point pattern analysis, such as our Kernel Density maps as well as our owin and raster objects.
+
+<p align="center">
+![](/proposal/_index_files/Storyboard5.PNG)
+</p>
+
+The final storyboard shows the results of our geographic segmentation, where you can choose a variety of options such as:
+
+- Distance Metric
+- Agglomeration Method
+- Cluster Variables
+- Number of Clusters
+- Clustering Method
+
+Based on the above options chosen, you are then able to view a cluster map, a dendrogram, and a heatmap.
+
 
 ## System Architecture
 

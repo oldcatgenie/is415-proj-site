@@ -1,0 +1,13 @@
+---
+description: "Take a look at our project poster."
+draft: FALSE
+title: "Poster"
+---
+
+## Poster
+
+
+
+## Poster Dimensions
+
+Our project poster is in the ANSI A1 size. Click [here]() if you wish to download the poster in the full resolution

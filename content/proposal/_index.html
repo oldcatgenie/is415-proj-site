@@ -4,6 +4,8 @@ draft: FALSE
 title: "Proposal"
 ---
 
+<link href="/rmarkdown-libs/anchor-sections/anchor-sections.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/anchor-sections/anchor-sections.js"></script>
 
 
 <div id="introduction" class="section level2">
@@ -99,19 +101,16 @@ Department of Statistics Singapore
 </tr>
 <tr>
 <td>
-Vacant Sites Sold By URA
+Master Plan 2014 Subzone Boundary (No Sea)
 </td>
 <td>
-This dataset reveals the information relating to URA land sales for commercial, hotel and private residential developments.
+This dataset contains the spatial data, as the URA divides Singapore into regions, planning areas and subzones to facilitate urban planning.
 </td>
 <td>
-Urban Redevelopment Authority
+<a href="https://data.gov.sg/dataset/master-plan-2014-subzone-boundary-no-sea" class="uri">https://data.gov.sg/dataset/master-plan-2014-subzone-boundary-no-sea</a>
 </td>
 <td>
-<a href="https://data.gov.sg/dataset/vacant-sites-sold-by-ura" class="uri">https://data.gov.sg/dataset/vacant-sites-sold-by-ura</a>
-</td>
-<td>
-.csv File
+.shp Files
 </td>
 </tr>
 </table>
@@ -156,15 +155,35 @@ These details are insightful and helpful for strategizing development which we c
 </div>
 <div id="application-design-storyboard" class="section level2">
 <h2>Application Design Storyboard</h2>
-<p>This storyboard is a tentative design of how the R Shiny Application will look like as the team develops it.</p>
-<p>The following picture shows how a map will be displayed. A map will be displayed in the main panel, while there would be a side panel for the user to toggle between other functions (buttons in red), as well as filter options in checkboxes.</p>
+<p>This following series of photos is a storyboard which shows how the R Shiny Application will look like as the team develops it.</p>
 <p align="center">
-<img src="/proposal/_index_files/Storyboard1.png" title="fig:" alt="Storyboard 1" />
+<img src="/proposal/_index_files/Storyboard1.PNG" />
 </p>
-<p>The following picture shows how a distribution (in histogram) will be displayed. Such visualisations will help us communicate the results of our data exploration better. The visualisation will be displayed in the main panel, while there would be a side panel for the user to toggle between other functions (buttons in red), as well as filter options in checkboxes.</p>
+<p>The storyboard above shows the homepage of the R Shiny Application, where we list out all the pages of the Application and reintroduce the LandMarkdown project and its objectives.</p>
 <p align="center">
-<img src="/proposal/_index_files/Storyboard2.png" title="fig:" alt="Storyboard 2" />
+<img src="/proposal/_index_files/Storyboard2.PNG" />
 </p>
+<p>The second storyboard shows the data we used for our project in tabular format. This interactive table also allows simple searching and sorting.</p>
+<p align="center">
+<img src="/proposal/_index_files/Storyboard3.PNG" />
+</p>
+<p>The third storyboard shows the results of our data exploration, where you can view the boxmaps, histograms and correlation plots. You can view these visualisations while selecting or filtering the industry category, among other options.</p>
+<p align="center">
+<img src="/proposal/_index_files/Storyboard4.PNG" />
+</p>
+<p>The fourth storyboard shows the results of our spatial point pattern analysis, such as our Kernel Density maps as well as our owin and raster objects.</p>
+<p align="center">
+<img src="/proposal/_index_files/Storyboard5.PNG" />
+</p>
+<p>The final storyboard shows the results of our geographic segmentation, where you can choose a variety of options such as:</p>
+<ul>
+<li>Distance Metric</li>
+<li>Agglomeration Method</li>
+<li>Cluster Variables</li>
+<li>Number of Clusters</li>
+<li>Clustering Method</li>
+</ul>
+<p>Based on the above options chosen, you are then able to view a cluster map, a dendrogram, and a heatmap.</p>
 </div>
 <div id="system-architecture" class="section level2">
 <h2>System Architecture</h2>
